@@ -1,16 +1,15 @@
+
 import { AppProps } from 'next/app'
+import Layout from '../components/layout/Layout'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../styles/globals.css'
 
-
 const  MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
-    <div className="container">
+    <Layout>
       <Component {...pageProps} />
-    </div>
-    
-
+    </Layout>
     )
 }
 
